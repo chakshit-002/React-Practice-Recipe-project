@@ -31,7 +31,7 @@ const CreateRecipe = () => {
   };
   // console.log(dish);
   return (
-    <div className="min-h-[100vh] px-4 py-8 md:flex md:flex-col md:items-center">
+    <div className="min-h-[100vh] px-4 py-8  lg:mt-10 mb-20 md:flex md:flex-col md:items-center">
       <h1 className="text-[6vw] mb-[2vw] font-semibold text-center p-4  lg:text-6xl lg:mb-5  ">
         Create Recipe
       </h1>

@@ -80,7 +80,7 @@ const SingleRecipe = () => {
   }, [params.id, dish, reset, favDishes]);
 
   return !loading ? (
-    <div className="parent-container p-[3vw] mt-5">
+    <div className="parent-container p-[3vw] mt-5 mb-20">
       <h1 className="text-[6vw] py-4.5 px-2.2 mb-6 lg:text-5xl lg:p-6 rounded-[10px] lg:mb-10 text-center text-white bg-[#4a3434] font-mono">
         Spice It Up: Edit or Delete
       </h1>

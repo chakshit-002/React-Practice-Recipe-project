@@ -11,7 +11,7 @@ const Recipes = () => {
   ));
   console.log("hamari dish ",dish)
   return (
-    <div className="  min-h-[100vh] flex justify-center gap-3 flex-wrap lg:gap-x-6 mt-10 md:mt-20 xl:mt-25">
+    <div className="  min-h-[100vh] flex justify-center gap-3 flex-wrap mb-20 lg:gap-x-6 mt-10 md:mt-20 xl:mt-25">
       {dish.length > 0 ? renderDishes : "No Dishes Found"}
     </div>
   );

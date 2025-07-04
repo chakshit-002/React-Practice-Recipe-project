@@ -4,35 +4,43 @@ import burger from "../assets/burger.jpg";
 import pizza from "../assets/pizza.jpg";
 import dish from "../assets/dish.jpg";
 import girlImg1 from "../assets/girl1.png";
+import pizzaImg from "../assets/pizzaCardImage.png";
+import burgerImg from "../assets/burgerImage.png";
+import shakesImg from "../assets/coldCoffeImage.png";
+import chineseImg from "../assets/noodlesImage.png";
+import chef1Img from "../assets/chef1.jpg";
+import chef2Img from "../assets/chef2.jpg";
+import chef3Img from "../assets/chef3.jpg";
+import chef4Img from "../assets/chef4.jpg";
 
 const Home = () => {
   const team = [
     {
       name: "Alizeh Anderson",
       title: "Senior Chef",
-      img: "../public/chef1.jpg"
+      img: `${chef1Img}`,
     },
     {
       name: "Angelina John",
       title: "Master Chef",
-      img: "../public/chef2.jpg"
+      img: `${chef2Img}`,
     },
     {
       name: "Andre Smith",
       title: "Professor",
-      img: "../public/chef3.jpg"
+      img: `${chef3Img}`,
     },
     {
       name: "Christina Chi",
       title: "Psychologist",
-      img: "../public/chef4.jpg"
-    }
+      img: `${chef4Img}`,
+    },
   ];
   return (
     <div className=" min-h-[100vh] px-5 py-10 md:px-12">
       <div className="hero-section flex flex-col md:flex-row">
         <div className="left-hero  flex flex-col items-start md:w-1/2 ">
-          <h1 className=" text-[9vw] text-red-950 leading-[10vw] md:text-[6vw] md:leading-[8vw] xl:text-7xl xl:leading-[12vh] 2xl:text-8xl 2xl:leading-[14vh] ">
+          <h1 className=" text-[9vw] text-red-950 leading-[10vw] md:text-[6vw] md:leading-[8vw] xl:text-7xl xl:leading-[12vh] 2xl:text-8xl 2xl:leading-[110px] ">
             Healthy <span className="text-red-600">Eating is an </span>{" "}
             <span className="text-orange-400">Important</span> Part of Lifestyle
           </h1>
@@ -130,7 +138,7 @@ const Home = () => {
             Get Started Today!
           </h1>
           <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[2.5vw]"></div>
-          <div className="categ-div flex flex-col gap-[6vw] mb-[10vw] lg:gap-[2vw] xl:gap-[4vh]">
+          <div className="categ-div flex flex-col gap-[6vw] mb-[10vw] lg:gap-[2vw] xl:gap-[4vh] lg:mb-1">
             <div className="categ-1 flex gap-[5vw] lg:gap-[2vw]">
               <div className="categ-1-disc text-[3.4vw] sm:text-[3vw] lg:text-[1.7vw] xl:text-[3vh] ">
                 <h3 className="font-bold text-[5vw] sm:text-[4.5vw] lg:text-[2.2vw] xl:text-[4vh]">
@@ -186,45 +194,80 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="top-foods flex flex-col  mt-[6vw] xl:mt-1 ">
+      <div className="top-foods flex flex-col  mt-[6vw] xl:mt-[8vh]">
         <div>
           <h1 className="text-[8vw] pb-1 lg:text-[4.5vw]">Top Foods</h1>
-          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6" ></div>
+          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6"></div>
         </div>
         <div className="food-item-cards gap-10 flex flex-col md:flex-row md:flex-wrap md:justify-evenly xl:gap-3 xl:justify-start xl:flex-nowrap">
           <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 rounded-4xl ">
             <div className="xl:h-[30vh] xl:flex xl:items-center">
-              <img src="../public/pizzaCardImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[22vh] " />
+              <img
+                src={pizzaImg}
+                className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[22vh] "
+              />
             </div>
-            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl">Pizza</h3>
-            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh]  mt-3 lg:text-3xl xl:text-2xl">Pizza <span className="text-gray-600">Love</span> <span className="text-[#0303cc]">Repeat !</span></p>
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl">
+              Pizza
+            </h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh]  mt-3 lg:text-3xl xl:text-2xl">
+              Pizza <span className="text-gray-600">Love</span>{" "}
+              <span className="text-[#0303cc]">Repeat !</span>
+            </p>
           </div>
           <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
-            <img src="../public/burgerImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
-            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Burger</h3>
-            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Bite <span className="text-gray-600">The</span> <span className="text-[#0303cc]">Beast !</span></p>
+            <img
+              src={burgerImg}
+              className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] "
+            />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">
+              Burger
+            </h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">
+              Bite <span className="text-gray-600">The</span>{" "}
+              <span className="text-[#0303cc]">Beast !</span>
+            </p>
           </div>
           <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
-            <img src="../public/coldCoffeImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
-            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Shakes</h3>
-            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Whip <span className="text-gray-600">Sip</span> <span className="text-[#0303cc]">Wow !</span></p>
+            <img
+              src={shakesImg}
+              className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] "
+            />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">
+              Shakes
+            </h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">
+              Whip <span className="text-gray-600">Sip</span>{" "}
+              <span className="text-[#0303cc]">Wow !</span>
+            </p>
           </div>
           <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
-            <img src="../public/noodlesImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
-            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Chinese</h3>
-            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Chopsticks <span className="text-gray-600">Chill</span> <span className="text-[#0303cc]">Chow !</span></p>
+            <img
+              src={chineseImg}
+              className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] "
+            />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">
+              Chinese
+            </h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">
+              Chopsticks <span className="text-gray-600">Chill</span>{" "}
+              <span className="text-[#0303cc]">Chow !</span>
+            </p>
           </div>
         </div>
       </div>
 
-
       <div className="   mt-[15vh] xl:mt-10">
         {/* Team Section */}
-        
+
         <div className="mb-10">
-        <h2 className="text-[5vw]  lg:text-[3vw] text-[#b23a29] xl:text-[1.8vw] xl:-mb-6">Foody</h2>
-          <h3 className=" text-[8vw] font-semibold mb-[2vw] md:text-[6vw] md:mb-2 lg:text-[4.5vw] ">Meet Our Best Team</h3>
-          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6" ></div>
+          <h2 className="text-[5vw]  lg:text-[3vw] text-[#b23a29] xl:text-[1.8vw] xl:-mb-6">
+            Foody
+          </h2>
+          <h3 className=" text-[8vw] font-semibold mb-[2vw] md:text-[6vw] md:mb-2 lg:text-[4.5vw] ">
+            Meet Our Best Team
+          </h3>
+          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6"></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6  mb-12">
           {team.map((member) => (
@@ -237,18 +280,16 @@ const Home = () => {
                   src={member.img}
                   alt={member.name}
                   className="w-full h-auto object-cover rounded-lg mb-4"
-                /></div>
+                />
+              </div>
               <h4 className="font-bold text-lg">{member.name}</h4>
               <p className="text-sm text-gray-600">{member.title}</p>
             </div>
           ))}
         </div>
-
-        
       </div>
     </div>
   );
 };
 
 export default Home;
-

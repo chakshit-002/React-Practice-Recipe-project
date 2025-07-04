@@ -17,7 +17,7 @@ const Fav = () => {
   }, [location])
   
   return (
-    <div className='flex  min-h-[100vh] justify-center gap-3 flex-wrap lg:gap-x-6 mt-10 md:mt-20 xl:mt-25'>
+    <div className='flex  min-h-[100vh] justify-center gap-3 flex-wrap  mb-20 lg:gap-x-6 mt-10 md:mt-20 xl:mt-25'>
         {favDishes.length > 0 ? renderFavDishes : 'No Favorites...'}
         
     </div>
